@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+ 
+
+
+th{
+font-family: Arial, Helvetica, sans-serif;
+font-size: x-large;
+text-align: left;
+}
+td{
+text-align: left;
+font-family: Arial, Helvetica, sans-serif;
+}
+table,td,th{
+border:1px ;
+}
+.footer_nav {
+overflow: hidden;
+background-color:#333;
+}
+.footer_nav a {
+float: left;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+color:white;
+padding: 14px 16px;
+text-decoration:none;
+margin-left: 10%;
+}
+.footer{
+    background-color: lightgray;
+
+    text-align: center;
+}
+table.social{
+    width: 100%;
+    text-align: center;
+}
+div.contact {
+            color: black;
+            font-size: 40px;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+
+    </style>
+   
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Sheet.css">
+</head>
+<body>
+    <ul class="active">
+        <li><a   href="home.html">Home</a></li>
+         <li><a  href="products.html">Products</a></li>
+        <li><a  class="active" href="#contact">Contact</a></li>
+        <li><a  href="about.html">About</a></li>
+      </ul>
+      <hr></hr>
+      <br><br><br><br><br><br><br><br>
+      <div class="contact">
+        <h1>You can contact us through</h1>
+        <p>WhatsApp | Instagram | Twitter</p>
+    </div>
+      <script>
+        const text = "You can contact us throug WhatsApp | Instagram | Twitter ";
+        let i = 0;
+        const speed = 100; 
+
+        const welcomeElement = document.querySelector("div.contact");
+        welcomeElement.textContent = ""; 
+
+        function typeWriter() {
+            if (i < text.length) {
+                welcomeElement.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        window.onload = typeWriter;
+
+      
+    </script>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div class="footer">
+        <table>
+        <tr>
+        <th rowspan="5"><img src="nacc.png" alt="NCAA logo" style="height:150px;width:150px;"></th>
+        <th></th>
+        <th style="width:10%"></th>
+        <th style="width:20%">Nusk</th>
+        <th style="width:20%">Admissions</th>
+        <th style="width:20%">Location</th>
+        <th>Contact</th>
+        </tr>
+        <tr>
+        <td height=30 colspan=1> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        
+        </tr>
+        <tr>
+        <th></th>
+        <th></th>
+        <td> About US</td>
+        <td> Find Prgrams</td>
+        <td>Map</td>
+        <td>+966 533272215 <br>+966 552989577</td>
+        </tr>
+        <tr>
+        <th></th>
+        <th></th>
+        <td>Quality & Accreditation</td>
+        <td></td>
+        <td>Campus Life</td>
+        <td>202311132@yu.edu.sa <br>202311873@yu.edu.sa </td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Contact Us</td>
+        </tr>
+        </table>
+        <img src="ktm.jpg" alt="NUSK logo" style="width:110px;height:50px;float: left;">
+        
+        <table  class="social" style="float:left">
+        <tr>
+        <td><img src="what.svg" alt="whats app" style="height: 100px; width: 90px;"></td>
+        <td ><img src="twi.jpg" alt="twitter app" style="height: 100px; width: 90px;"></td>
+        <td ><img src="inst.svg" alt="instagram app" style="height: 100px; width: 90px;"></td>
+        </tr></table></div>
+        <div class="footer_nav">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Nusk Company 2026@</a>
+        </div>
+        <!-- شريط صورة جامعة اليمامة - حجم صغير -->
+<!-- شريط جامعة اليمامة بنفس حجم الشريط الأسود -->
+<div style="width: 100%; height: 45px; background-color: #ed920a; color: white; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; box-sizing: border-box; font-family: Arial, sans-serif; font-size: 14px;">
+    <span style="font-weight: bold;">Al Yamamah University</span>
+    <span>جامعة اليامامه</span>
+    <span style="font-size: 12px;">A Better Tomorrow</span>
+
+</body>
+</html>

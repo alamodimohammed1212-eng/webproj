@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h3.welcome {
+            color: black;
+            font-size: 40px;
+            font-weight: bolder;
+            font-style: italic;
+            text-align: center;
+        }
+
+        p.creat {
+            color: black;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+
+        div.table {
+            color: black;
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+            padding: 14px 16px;
+            background: center;
+        }
+
+        div.click {
+            color: rgb(217, 212, 212);
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+            padding: 14px 16px;
+            background-color:rgb(12, 10, 9);
+        }
+        .button{
+          background-color: rgb(99, 99, 163);
+          color: white;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Sheet.css">
+</head>
+<body>
+    <ul class="active">
+        <li><a class="active" href="home.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    <hr>
+
+    <br><br><br><br><br>
+    <div class="main">
+        <h3 class="welcome">Welcome to Nusk Company </h3>
+    </div>
+
+        <p class="creat">If you want to create an account fill out :</p>
+
+        <form action="products.html">
+            <div class="table">
+                <table>
+                    First name:
+                    <br>
+                    <input type="text" name="first name" value="" required><br>
+                    Last name:
+                    <br>
+                    <input type="text" name="last name" value="" required><br>
+                    Your email:
+                    <br>
+                    <input type="text" name="your email" value="" required><br>
+                    Your phone number:
+                    <br>
+                    <input type="text" name="your phone number" value=""><br>
+                    Password:
+                    <br>
+                    <input type="password" name="password" value="" required><br>
+                    Confirm password:
+                    <br>
+                    <input type="password" name="confirm password" value="" required><br>
+                    <input class="button" type="submit" value="submit">
+                    <input class="button" type="reset" value="reset">
+                </table>
+            </div>
+        </form>
+    </div>
+
+    <div class="click">
+        <p>If you want to keep going as a guest <a href="products.html"> click here</a></p>
+    </div>
+<!-- شريط صورة جامعة اليمامة - حجم صغير -->
+<!-- شريط جامعة اليمامة بنفس حجم الشريط الأسود -->
+<div style="width: 100%; height: 45px; background-color: #ed920a; color: white; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; box-sizing: border-box; font-family: Arial, sans-serif; font-size: 14px;">
+    <span style="font-weight: bold;">Al Yamamah University</span>
+    <span>جامعة اليامامه</span>  
+    <span style="font-size: 12px;">A Better Tomorrow</span>
+
+
+<script> 
+        const text = "Welcome to our website";
+        let i = 0;
+        const speed = 100; 
+
+        const welcomeElement = document.querySelector("h3.welcome");
+        welcomeElement.textContent = ""; 
+
+        function typeWriter() {
+            if (i < text.length) {
+                welcomeElement.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        window.onload = typeWriter;
+    </script>
+</body>
+</html>
