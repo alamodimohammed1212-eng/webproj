@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    <link rel="stylesheet" href="Sheet.css">
+
+    <style>
+
+        .activeCol{
+            padding: 10px 20px;
+            background-color: rgb(99, 99, 163);
+            display: inline-flex;
+        }
+
+        div.c{
+            text-align: center;
+        }
+
+        table.photos{
+            width: 100%;
+            text-align: center;
+        }
+
+        .headBat{
+            background-color: orange;
+            width: 200px;
+        }
+
+        h4.fax{
+            color: red;
+        }
+
+        table.sig{
+            padding-left: 70%;
+        }
+
+        .buy{
+            background-color: rgb(99, 99, 163);
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <ul class="active">
+        <li><a href="home.html">Home</a></li>
+
+        <li>
+            <a class="active" href="products.html">Products</a>
+
+            <select id="products" name="products"
+                onchange="window.location.href=this.value;">
+                <option value="">Choose</option>
+                <option value="Electronics.html">Electronics</option>
+                <option value="batteri.html">Battery</option>
+            </select>
+        </li>
+
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    <hr>
+
+    <!-- Brand Menu -->
+    <div class="c">
+
+        <ul class="activeCol">
+            <li><a href="#APPLE">APPLE</a></li>
+            <li><a href="#HUAWEI">HUAWEI</a></li>
+            <li><a href="#SAMSUNG">SAMSUNG</a></li>
+        </ul>
+
+    </div>
+
+    <br><br>
+
+    <!-- Logo -->
+    <table class="sig">
+        <tr>
+            <td>
+                <img src="ktm.jpg"
+                     style="width: 200px; height: 200px;">
+            </td>
+        </tr>
+    </table>
+
+    <!-- APPLE -->
+    <h1 id="APPLE" class="headBat">APPLE:</h1>
+
+    <hr>
+
+    <table class="photos">
+
+        <tr>
+            <td>
+                <img src="macbook.jpg"
+                     style="width: 200px; height: 200px;">
+            </td>
+
+            <td>
+                <img src="tablet APP.jpg"
+                     style="width: 200px; height: 200px;">
+            </td>
+
+            <td>
+                <img src="iphone.jpg"
+                     style="width: 200px; height: 200px;">
+            </td>
+        </tr>
+
+        <tr>
+
+            <td>
+                <h3>
+                    النوع: ماك بوك اير <br>
+                    السعر: 4500 ريال
+                </h3>
+
+                <h4 class="fax">
+                    شامل ضريبة القيمة المضافة
+                </h4>
+
+                <button class="buy">Buy</button>
+            </td>
+
+            <td>
+                <h3>
+                    النوع: ايباد اير <br>
+                    السعر: 1850 ريال
+                </h3>
+
+                <h4 class="fax">
+                    شامل ضريبة القيمة المضافة
+                </h4>
+
+                <button class="buy">Buy</button>
+            </td>
+
+            <td>
+                <h3>
+                    النوع: ايفون 17 برو ماكس 256 <br>
+                    السعر: 5500 ريال
+                </h3>
+
+                <h4 class="fax">
+                    شامل ضريبة القيمة المضافة
+                </h4>
+
+                <button class="buy">Buy</button>
+            </td>
+
+        </tr>
+
+    </table>
+
+    <br>
+
+    <!-- HUAWEI -->
+    <h1 id="HUAWEI" class="headBat">HUAWEI:</h1>
+
+    <hr>
+
+    <table class="photos">
+
+        <tr>
+
+            <td>
+                <img src="HW.jpg"
+                     style="width: 200px; height: 200px;">
+            </td>
+
+            <td>
+                <img src="tablet HW.webp"
+                     style="width: 200px; height: 200px;">
+            </td>
+
+            <td>
+                <img src="device HW.jpg"
+                     style="width: 200px; height: 200px;">
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                <h3>
+                    النوع: لاب توب عادي <br>
+                    السعر: 2200 ريال
+                </h3>
+
+                <h4 class="fax">
+                    شامل ضريبة القيمة المضافة
+                </h4>
+
+                <button class="buy">Buy</button>
+            </td>
+
+            <td>
+                <h3>
+                    النوع: ايباد برو <br>
+                    السعر: 650 ريال
+                </h3>
+
+                <h4 class="fax">
+                    شامل ضريبة القيمة المضافة
+                </h4>
+
+                <button class="buy">Buy</button>
+            </td>
+
+            <td>
+                <h3>
+                    النوع: اس 18 256 <br>
+                    السعر: 1600 ريال
+                </h3>
+
+                <h4 class="fax">
+                    شامل ضريبة القيمة المضافة
+                </h4>
+
+                <button class="buy">Buy</button>
+            </td>
+
+        </tr>
+
+    </table>
+
+    <br>
+
+    <!-- SAMSUNG -->
+    <h1 id="SAMSUNG" class="headBat">SAMSUNG:</h1>
+
+    <hr>
+
+    <table class="photos">
+
+        <tr>
+
+            <td>
+                <img src="laptob SAM.webp"
+                     style="width: 200px; height: 200px;">
+            </td>
+
+            <td>
+                <img src="tablet SAN.webp"
+                     style="width: 200px; height: 200px;">
+            </td>
+
+            <td>
+                <img src="ultra.webp"
+                     style="width: 200px; height: 200px;">
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+                <h3>
+                    النوع: لاب توب بلس <br>
+                    السعر: 2500 ريال
+                </h3>
+
+                <h4 class="fax">
+                    شامل ضريبة القيمة المضافة
+                </h4>
+
+                <button class="buy">Buy</button>
+            </td>
+
+            <td>
+                <h3>
+                    النوع: ايباد بلس <br>
+                    السعر: 800 ريال
+                </h3>
+
+                <h4 class="fax">
+                    شامل ضريبة القيمة المضافة
+                </h4>
+
+                <button class="buy">Buy</button>
+            </td>
+
+            <td>
+                <h3>
+                    النوع: الترا اس 25 256 <br>
+                    السعر: 4200 ريال
+                </h3>
+
+                <h4 class="fax">
+                    شامل ضريبة القيمة المضافة
+                </h4>
+
+                <button class="buy">Buy</button>
+            </td>
+
+        </tr>
+
+    </table>
+
+    <br>
+
+    <!-- Footer -->
+    <div style="
+        width: 100%;
+        height: 45px;
+        background-color: #ed920a;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        font-size: 14px;">
+
+        <span style="font-weight: bold;">
+            Al Yamamah University
+        </span>
+
+        <span>
+            جامعة اليمامة
+        </span>
+
+        <span style="font-size: 12px;">
+            A Better Tomorrow
+        </span>
+
+    </div>
+
+</body>
+</html>
